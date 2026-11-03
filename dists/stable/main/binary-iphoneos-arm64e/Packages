@@ -14,3 +14,20 @@ Size: 41330
 MD5sum: 212fa251b8ef14db222d70f6578795d4
 SHA1: 55a2ccd362de8cba178dbb69a6e64ef86a3851f2
 SHA256: 68cd53160df5a3c2e428e59ae579944b1d544e9b1d73d09a5d12703322c461b2
+
+Package: app.local.nfcoma.applepay-alert-guard
+Version: 0.1.0+5-roothide
+Architecture: iphoneos-arm64e
+Name: NFComa Apple Pay Alert Guard / NFComa Apple Pay 警告守护
+Description: 中文：当 iPhone 显示“无法使用 Apple Pay”提示时，这个插件会自动关闭提示。它不会修复或启用 Apple Pay 或 NFC。
+ English: When your iPhone shows an “Apple Pay unavailable” alert, this tweak closes it automatically. It does not fix or enable Apple Pay or NFC.
+Maintainer: NFComa
+Section: Tweaks
+Depends: mobilesubstrate
+Installed-Size: 244
+Icon: https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/icons/app.local.nfcoma.applepay-alert-guard.png
+Filename: pool/main/app.local.nfcoma.applepay-alert-guard_0.1.0+5-roothide_iphoneos-arm64e.deb
+Size: 41300
+MD5sum: 827e6a0e8593c5f19dea5866d33c9e74
+SHA1: 629216f5fae250af952a9b1744560d195894db9e
+SHA256: c8de84e03b528d2f85b161e9a376773c6c4c27768970efa059982d6d2aac3212
