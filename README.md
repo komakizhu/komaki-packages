@@ -8,6 +8,16 @@ The Komaki Zhu Sileo/APT source currently hosts NFComa Apple Pay Alert Guard. Th
 
 Sileo's simple “Add Source” flow requests `Release` from the repository root. The index script therefore generates both flat root indexes and the standard `dists/stable/` layout.
 
+## 当前插件 / Current Tweak
+
+**NFComa Apple Pay Alert Guard** 会自动关闭 iPhone 显示的“无法使用 Apple Pay”提示。它不会修复或启用 Apple Pay、NFC，也不能代替越狱注入器。
+
+This tweak automatically closes the “Apple Pay unavailable” alert on iPhone. It does not fix or enable Apple Pay or NFC, and it does not replace the jailbreak injector.
+
+提供三种越狱安装包：Rootful（`iphoneos-arm`）、Rootless（`iphoneos-arm64`）和 RootHide（`iphoneos-arm64e`）。请安装与你的越狱环境相符的版本；没有 TrollStore 安装包。
+
+Three jailbreak packages are available: Rootful (`iphoneos-arm`), Rootless (`iphoneos-arm64`), and RootHide (`iphoneos-arm64e`). Install the package that matches your jailbreak. There is no TrollStore package.
+
 ## Sileo 源地址 / Sileo Source URLs
 
 - 国内友好 CDN / China-friendly CDN：`https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/`

@@ -3,16 +3,16 @@ Label: Komaki Zhu
 Suite: stable
 Codename: stable
 Version: 1.0
-Architectures: iphoneos-arm64e
+Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: Komaki Zhu 越狱插件源 / Komaki Zhu jailbreak package source
-Date: Tue, 03 Nov 2026 14:53:33 GMT
+Date: Tue, 03 Nov 2026 15:14:32 GMT
 MD5Sum:
- 255978da6d66a972ea4251042f37eb27              943 Packages
- 27c49cd727869cde5596a4f012adf87d              664 Packages.gz
+ 66f83ba965e47f58da18b4c1c4f9724e             3765 Packages
+ b21376fa9db53416bd9f77d4578f659b             1035 Packages.gz
 SHA1:
- 95403b4aa76f80c67898fe0a9b9e9a5db7ab62f8              943 Packages
- a5977a8d972990de0348a9336e151a40260f7faa              664 Packages.gz
+ 3e99114771e34a6fbc88e1f7a5a8ef749e7fd67b             3765 Packages
+ 5ca60e9b8768b8c41957bcc25f700e0163fee26a             1035 Packages.gz
 SHA256:
- 1e0102f38f4a6c6daa8c8d33f4f7679416acfa88cfbf98d71f488f668b8ed79f              943 Packages
- 32057a2d67a0e8dd711b07040a90b470c776c02999e55fb9a86ec690ffdd0294              664 Packages.gz
+ 5a52e175e3740efa53f98f99056cd68944437e1529757e045eae056e85cb7fcc             3765 Packages
+ 96334900d03219c038b47a05685e88817b2b503f1ce3636a37807e862093bf39             1035 Packages.gz
