@@ -20,10 +20,12 @@ Three jailbreak packages are available: Rootful (`iphoneos-arm`), Rootless (`iph
 
 ## Sileo 源地址 / Sileo Source URLs
 
+- 当前推荐 / Recommended now：`https://komakizhu.github.io/komaki-packages/`
 - 国内友好 CDN / China-friendly CDN：`https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/`
-- GitHub Pages：`https://komakizhu.github.io/komaki-packages/`
 
-两个地址都可直接添加到 Sileo。/ Both URLs can be added directly in Sileo.
+GitHub Pages 已同步当前索引和安装包，可直接添加到 Sileo。jsDelivr 的 `@main` 缓存可能暂时保留旧索引；如果刷新时报 404 或校验错误，请改用 GitHub Pages 地址。
+
+GitHub Pages currently serves the latest indexes and packages and can be added directly to Sileo. The jsDelivr `@main` cache may temporarily serve old indexes. If a refresh reports a 404 or checksum error, use the GitHub Pages URL.
 
 ## 更新索引 / Updating the Index
 
