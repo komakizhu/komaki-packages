@@ -6,13 +6,13 @@ Version: 1.0
 Architectures: iphoneos-arm64e
 Components: main
 Description: Komaki Zhu 越狱插件源 / Komaki Zhu jailbreak package source
-Date: Tue, 03 Nov 2026 14:43:30 GMT
+Date: Tue, 03 Nov 2026 14:53:33 GMT
 MD5Sum:
- a8609f8470b4318942db4ecfd096cf08             1130 main/binary-iphoneos-arm64e/Packages
- 183b95829beb402cff4b93baf8230e52              732 main/binary-iphoneos-arm64e/Packages.gz
+ 255978da6d66a972ea4251042f37eb27              943 main/binary-iphoneos-arm64e/Packages
+ 27c49cd727869cde5596a4f012adf87d              664 main/binary-iphoneos-arm64e/Packages.gz
 SHA1:
- 53747d312d31e45e25f434c59b308cceb457079f             1130 main/binary-iphoneos-arm64e/Packages
- f235ee87ba2a36b9e42e77a4ef2c79b647e4c889              732 main/binary-iphoneos-arm64e/Packages.gz
+ 95403b4aa76f80c67898fe0a9b9e9a5db7ab62f8              943 main/binary-iphoneos-arm64e/Packages
+ a5977a8d972990de0348a9336e151a40260f7faa              664 main/binary-iphoneos-arm64e/Packages.gz
 SHA256:
- abdc766bfdbd692771dd297334fd3279660edfb29adc0950eb72f282c213ef61             1130 main/binary-iphoneos-arm64e/Packages
- ae3c7e915289dc874c732f39b5b5b93f274dd81b00d666872c142693d0e30635              732 main/binary-iphoneos-arm64e/Packages.gz
+ 1e0102f38f4a6c6daa8c8d33f4f7679416acfa88cfbf98d71f488f668b8ed79f              943 main/binary-iphoneos-arm64e/Packages
+ 32057a2d67a0e8dd711b07040a90b470c776c02999e55fb9a86ec690ffdd0294              664 main/binary-iphoneos-arm64e/Packages.gz
