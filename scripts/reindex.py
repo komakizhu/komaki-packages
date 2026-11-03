@@ -11,6 +11,21 @@ import pathlib
 import subprocess
 
 DEFAULT_BASE_URL = "https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main"
+SOURCE_NAME = "Komaki Zhu"
+SOURCE_DESCRIPTION = "Komaki Zhu 越狱插件源 / Komaki Zhu jailbreak package source"
+PACKAGE_METADATA_OVERRIDES = {
+    "app.local.nfcoma.applepay-alert-guard": {
+        "name": "NFComa Apple Pay Alert Guard / NFComa Apple Pay 警告守护",
+        "description": (
+            "抑制 Apple Pay 不可用提醒并提供注入诊断 / "
+            "Suppresses Apple Pay unavailable alerts and provides injection diagnostics.\n"
+            " 中文：自动确认 SpringBoard 与 NFComa 中匹配的 Apple Pay 不可用提醒，并提供运行时注入诊断。"
+            "此插件不会恢复 Apple Pay 或 NFC 服务。\n"
+            " English: Automatically acknowledges matching Apple Pay unavailable alerts in SpringBoard and NFComa, "
+            "with runtime injection diagnostics. It does not restore Apple Pay or NFC service."
+        ),
+    },
+}
 
 
 def parse_control(data: str) -> dict[str, str]:
@@ -56,9 +71,9 @@ def write_release(
     date: str,
 ) -> None:
     release = [
-        "Origin: Komaki", "Label: Komaki", "Suite: stable", "Codename: stable", "Version: 1.0",
+        f"Origin: {SOURCE_NAME}", f"Label: {SOURCE_NAME}", "Suite: stable", "Codename: stable", "Version: 1.0",
         "Architectures: " + " ".join(architectures), "Components: main",
-        "Description: Komaki jailbreak package source", "Date: " + date,
+        "Description: " + SOURCE_DESCRIPTION, "Date: " + date,
     ]
     for label, algorithm in (("MD5Sum", "md5"), ("SHA1", "sha1"), ("SHA256", "sha256")):
         release.append(label + ":")
@@ -81,6 +96,7 @@ def main() -> None:
     for deb in sorted((root / "pool").rglob("*.deb")):
         raw = subprocess.check_output(["dpkg-deb", "-f", str(deb)], text=True)
         fields = parse_control(raw)
+        fields.update(PACKAGE_METADATA_OVERRIDES.get(fields.get("package", ""), {}))
         for required in ("package", "version", "architecture", "description"):
             if not fields.get(required):
                 raise SystemExit(f"{deb}: missing {required} field")

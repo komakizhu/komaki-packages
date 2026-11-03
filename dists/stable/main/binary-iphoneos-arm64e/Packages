@@ -1,8 +1,10 @@
 Package: app.local.nfcoma.applepay-alert-guard
 Version: 0.1.0+4-roothide
 Architecture: iphoneos-arm64e
-Name: NFComa Apple Pay Alert Guard
-Description: Acknowledges matching Apple Pay unavailable warnings in SpringBoard and NFComa, with runtime injection diagnostics. Does not restore Apple Pay or NFC service.
+Name: NFComa Apple Pay Alert Guard / NFComa Apple Pay 警告守护
+Description: 抑制 Apple Pay 不可用提醒并提供注入诊断 / Suppresses Apple Pay unavailable alerts and provides injection diagnostics.
+ 中文：自动确认 SpringBoard 与 NFComa 中匹配的 Apple Pay 不可用提醒，并提供运行时注入诊断。此插件不会恢复 Apple Pay 或 NFC 服务。
+ English: Automatically acknowledges matching Apple Pay unavailable alerts in SpringBoard and NFComa, with runtime injection diagnostics. It does not restore Apple Pay or NFC service.
 Maintainer: NFComa
 Section: Tweaks
 Depends: mobilesubstrate
