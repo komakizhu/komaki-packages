@@ -35,6 +35,40 @@ def field_lines(name: str, value: str) -> list[str]:
     return [f"{name}: {lines[0]}", *lines[1:]]
 
 
+def render_packages(
+    package_entries: list[tuple[str, dict[str, str]]],
+    order: list[tuple[str, str]],
+) -> bytes:
+    paragraphs: list[str] = []
+    for _, fields in sorted(package_entries, key=lambda item: (item[0], item[1]["version"])):
+        lines: list[str] = []
+        for key, label in order:
+            if fields.get(key):
+                lines.extend(field_lines(label, fields[key]))
+        paragraphs.append("\n".join(lines))
+    return ("\n\n".join(paragraphs) + "\n").encode("utf-8")
+
+
+def write_release(
+    path: pathlib.Path,
+    index_paths: list[pathlib.Path],
+    architectures: list[str],
+    date: str,
+) -> None:
+    release = [
+        "Origin: Komaki", "Label: Komaki", "Suite: stable", "Codename: stable", "Version: 1.0",
+        "Architectures: " + " ".join(architectures), "Components: main",
+        "Description: Komaki jailbreak package source", "Date: " + date,
+    ]
+    for label, algorithm in (("MD5Sum", "md5"), ("SHA1", "sha1"), ("SHA256", "sha256")):
+        release.append(label + ":")
+        for index in sorted(index_paths):
+            relative = index.relative_to(path.parent).as_posix()
+            data = index.read_bytes()
+            release.append(f" {checksum(data, algorithm)} {len(data):16d} {relative}")
+    path.write_text("\n".join(release) + "\n", encoding="utf-8")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=pathlib.Path, default=pathlib.Path(__file__).resolve().parents[1])
@@ -66,7 +100,6 @@ def main() -> None:
     if not packages_by_arch:
         raise SystemExit("pool/ contains no .deb packages")
 
-    index_paths: list[pathlib.Path] = []
     order = [
         ("package", "Package"), ("version", "Version"), ("architecture", "Architecture"),
         ("name", "Name"), ("description", "Description"), ("maintainer", "Maintainer"),
@@ -74,36 +107,30 @@ def main() -> None:
         ("installed-size", "Installed-Size"), ("icon", "Icon"), ("filename", "Filename"),
         ("size", "Size"), ("md5sum", "MD5sum"), ("sha1", "SHA1"), ("sha256", "SHA256"),
     ]
+    architectures = sorted(packages_by_arch)
+    hierarchical_index_paths: list[pathlib.Path] = []
     for arch, package_entries in sorted(packages_by_arch.items()):
         folder = root / "dists/stable/main" / f"binary-{arch}"
         folder.mkdir(parents=True, exist_ok=True)
-        paragraphs: list[str] = []
-        for _, fields in sorted(package_entries, key=lambda item: (item[0], item[1]["version"])):
-            lines: list[str] = []
-            for key, label in order:
-                if fields.get(key):
-                    lines.extend(field_lines(label, fields[key]))
-            paragraphs.append("\n".join(lines))
-        index_data = ("\n\n".join(paragraphs) + "\n").encode("utf-8")
+        index_data = render_packages(package_entries, order)
         index = folder / "Packages"
         index.write_bytes(index_data)
         (folder / "Packages.gz").write_bytes(gzip.compress(index_data, mtime=0))
-        index_paths.extend((index, folder / "Packages.gz"))
+        hierarchical_index_paths.extend((index, folder / "Packages.gz"))
 
-    release = [
-        "Origin: Komaki", "Label: Komaki", "Suite: stable", "Codename: stable", "Version: 1.0",
-        "Architectures: " + " ".join(sorted(packages_by_arch)), "Components: main",
-        "Description: Komaki jailbreak package source",
-        "Date: " + email.utils.format_datetime(dt.datetime.now(dt.timezone.utc), usegmt=True),
-    ]
-    release_root = root / "dists/stable"
-    for label, algorithm in (("MD5Sum", "md5"), ("SHA1", "sha1"), ("SHA256", "sha256")):
-        release.append(label + ":")
-        for index in sorted(index_paths):
-            relative = index.relative_to(release_root).as_posix()
-            data = index.read_bytes()
-            release.append(f" {checksum(data, algorithm)} {len(data):16d} {relative}")
-    (release_root / "Release").write_text("\n".join(release) + "\n", encoding="utf-8")
+    release_date = email.utils.format_datetime(dt.datetime.now(dt.timezone.utc), usegmt=True)
+    write_release(root / "dists/stable/Release", hierarchical_index_paths, architectures, release_date)
+
+    # Sileo's simple “Add Source” flow treats the supplied URL as a flat APT root
+    # and requests <URL>/Release and <URL>/Packages. Keep this alongside the
+    # conventional dists/stable layout for clients that configure a suite.
+    all_entries = [entry for entries in packages_by_arch.values() for entry in entries]
+    flat_data = render_packages(all_entries, order)
+    flat_index = root / "Packages"
+    flat_gzip = root / "Packages.gz"
+    flat_index.write_bytes(flat_data)
+    flat_gzip.write_bytes(gzip.compress(flat_data, mtime=0))
+    write_release(root / "Release", [flat_index, flat_gzip], architectures, release_date)
 
 
 if __name__ == "__main__":

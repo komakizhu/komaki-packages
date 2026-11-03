@@ -1,0 +1,18 @@
+Origin: Komaki
+Label: Komaki
+Suite: stable
+Codename: stable
+Version: 1.0
+Architectures: iphoneos-arm64e
+Components: main
+Description: Komaki jailbreak package source
+Date: Tue, 03 Nov 2026 14:20:35 GMT
+MD5Sum:
+ 3f5a757880f19aa3acd5fea9366d14d5              771 Packages
+ e107c92ad68ac4d50aac4b7be610eba9              490 Packages.gz
+SHA1:
+ e569de71982c50aaa8880a5bc837d58faf2547d3              771 Packages
+ 76c4c692c65c757736c97d4f0301a5cc1e9beefa              490 Packages.gz
+SHA256:
+ 287b74b59009363c28c8436b2cdc2e3fed83a29b2494c3048827ad59d47e9bea              771 Packages
+ 0676586c9b09b55547f4d997723d86b5e75c9087cbc5f572066e8cb9cf39207e              490 Packages.gz
