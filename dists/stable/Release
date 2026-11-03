@@ -1,18 +1,18 @@
-Origin: Komaki
-Label: Komaki
+Origin: Komaki Zhu
+Label: Komaki Zhu
 Suite: stable
 Codename: stable
 Version: 1.0
 Architectures: iphoneos-arm64e
 Components: main
-Description: Komaki jailbreak package source
-Date: Tue, 03 Nov 2026 14:20:35 GMT
+Description: Komaki Zhu 越狱插件源 / Komaki Zhu jailbreak package source
+Date: Tue, 03 Nov 2026 14:43:30 GMT
 MD5Sum:
- 3f5a757880f19aa3acd5fea9366d14d5              771 main/binary-iphoneos-arm64e/Packages
- e107c92ad68ac4d50aac4b7be610eba9              490 main/binary-iphoneos-arm64e/Packages.gz
+ a8609f8470b4318942db4ecfd096cf08             1130 main/binary-iphoneos-arm64e/Packages
+ 183b95829beb402cff4b93baf8230e52              732 main/binary-iphoneos-arm64e/Packages.gz
 SHA1:
- e569de71982c50aaa8880a5bc837d58faf2547d3              771 main/binary-iphoneos-arm64e/Packages
- 76c4c692c65c757736c97d4f0301a5cc1e9beefa              490 main/binary-iphoneos-arm64e/Packages.gz
+ 53747d312d31e45e25f434c59b308cceb457079f             1130 main/binary-iphoneos-arm64e/Packages
+ f235ee87ba2a36b9e42e77a4ef2c79b647e4c889              732 main/binary-iphoneos-arm64e/Packages.gz
 SHA256:
- 287b74b59009363c28c8436b2cdc2e3fed83a29b2494c3048827ad59d47e9bea              771 main/binary-iphoneos-arm64e/Packages
- 0676586c9b09b55547f4d997723d86b5e75c9087cbc5f572066e8cb9cf39207e              490 main/binary-iphoneos-arm64e/Packages.gz
+ abdc766bfdbd692771dd297334fd3279660edfb29adc0950eb72f282c213ef61             1130 main/binary-iphoneos-arm64e/Packages
+ ae3c7e915289dc874c732f39b5b5b93f274dd81b00d666872c142693d0e30635              732 main/binary-iphoneos-arm64e/Packages.gz
