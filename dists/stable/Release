@@ -6,7 +6,7 @@ Version: 1.0
 Architectures: iphoneos-arm64e
 Components: main
 Description: Komaki jailbreak package source
-Date: Tue, 03 Nov 2026 13:56:36 GMT
+Date: Tue, 03 Nov 2026 14:20:35 GMT
 MD5Sum:
  3f5a757880f19aa3acd5fea9366d14d5              771 main/binary-iphoneos-arm64e/Packages
  e107c92ad68ac4d50aac4b7be610eba9              490 main/binary-iphoneos-arm64e/Packages.gz
