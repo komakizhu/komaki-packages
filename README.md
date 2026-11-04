@@ -1,10 +1,10 @@
 # Komaki Zhu 越狱插件源 / Komaki Zhu Jailbreak Source
 
-Komaki Zhu 的 Sileo/APT 越狱插件源，目前收录 NFComa Apple Pay Alert Guard。软件源名称和头像使用 Komaki Zhu 的 GitHub 资料。
+Komaki Zhu 的 Sileo/APT 越狱插件源，目前收录 NFComa Apple Pay Alert Guard 和小红书防自动刷新。软件源名称和头像使用 Komaki Zhu 的 GitHub 资料。
 
 Sileo 的“添加源”会直接请求源根目录下的 `Release`，所以索引脚本同时生成根目录平面索引和标准 `dists/stable/` 索引。
 
-The Komaki Zhu Sileo/APT source currently hosts NFComa Apple Pay Alert Guard. The source name and icon use Komaki Zhu's GitHub profile.
+The Komaki Zhu Sileo/APT source currently hosts NFComa Apple Pay Alert Guard and XHS No Startup Refresh. The source name and icon use Komaki Zhu's GitHub profile.
 
 Sileo's simple “Add Source” flow requests `Release` from the repository root. The index script therefore generates both flat root indexes and the standard `dists/stable/` layout.
 
@@ -14,9 +14,21 @@ Sileo's simple “Add Source” flow requests `Release` from the repository root
 
 This tweak automatically closes the “Apple Pay unavailable” alert on iPhone. It does not fix or enable Apple Pay or NFC, and it does not replace the jailbreak injector.
 
-提供三种越狱安装包：Rootful（`iphoneos-arm`）、Rootless（`iphoneos-arm64`）和 RootHide（`iphoneos-arm64e`）。请安装与你的越狱环境相符的版本；没有 TrollStore 安装包。
+提供三种越狱安装包：Rootful（`iphoneos-arm`）、Rootless（`iphoneos-arm64`）和 RootHide（`iphoneos-arm64e`）。请安装与你的越狱环境相符的版本。
 
-Three jailbreak packages are available: Rootful (`iphoneos-arm`), Rootless (`iphoneos-arm64`), and RootHide (`iphoneos-arm64e`). Install the package that matches your jailbreak. There is no TrollStore package.
+Three jailbreak packages are available: Rootful (`iphoneos-arm`), Rootless (`iphoneos-arm64`), and RootHide (`iphoneos-arm64e`). Install the package that matches your jailbreak.
+
+### 小红书防自动刷新 / XHS No Startup Refresh
+
+阻止小红书打开或回到前台时自动刷新首页，保留手动刷新和继续加载；用户触摸或滚动后会放行请求。
+三个 `.deb` 的文件名使用“中文名-版本-环境”规则；另外提供一个可供 TrollStore/TrollFools 注入的通用动态库：
+
+- [Rootful `.deb`](pool/main/小红书防自动刷新-0.1.0-rootful.deb)
+- [Rootless `.deb`](pool/main/小红书防自动刷新-0.1.0-rootless.deb)
+- [RootHide `.deb`](pool/main/小红书防自动刷新-0.1.0-roothide.deb)
+- [TrollStore/TrollFools `.dylib`](artifacts/小红书防自动刷新-0.1.0-1-trollstore.dylib)
+
+Keeps the Xiaohongshu home feed stable when the app opens or returns to the foreground. Manual refresh and pagination remain available, and requests are released after user interaction. The TrollStore/TrollFools file is a universal arm64/arm64e dylib for injection; it is not a pre-injected IPA.
 
 ## Sileo 源地址 / Sileo Source URLs
 
@@ -37,4 +49,4 @@ python3 scripts/reindex.py
 
 脚本会读取 `pool/**/*.deb`，生成根目录 `Release`、`Packages`、`Packages.gz`，以及按架构分开的标准 APT 索引。/ The script reads `pool/**/*.deb` and generates root `Release`, `Packages`, and `Packages.gz` files plus architecture-specific standard APT indexes.
 
-本仓库只放越狱插件包、软件源头像、包图标和索引，不放 NFComa App、IPA 或 App 源码。/ This repository contains jailbreak packages, the source avatar, package icons, and indexes. It does not contain the NFComa app or IPA.
+本仓库只放越狱插件包、TrollStore 动态库、软件源头像、包图标和索引，不放 NFComa App、IPA 或 App 源码。/ This repository contains jailbreak packages, the TrollStore dylib, the source avatar, package icons, and indexes. It does not contain the NFComa app or IPA source.

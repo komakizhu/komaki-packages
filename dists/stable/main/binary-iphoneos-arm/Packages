@@ -14,3 +14,19 @@ Size: 41302
 MD5sum: 89c88c61a316e9c6b36d7c276541f684
 SHA1: 90b9d333566b3974da776e6ce22551b872b7c020
 SHA256: 2cc0eb424dd1b86d33c8c1fc29642a10d4851d0626078e0c857611f76ad52de8
+
+Package: com.local.xhs.norefresh
+Version: 0.1.0+1-rootful
+Architecture: iphoneos-arm
+Name: 小红书防自动刷新 / XHS No Startup Refresh
+Description: 中文：阻止小红书打开或回到前台时自动刷新首页，保留手动刷新和继续加载。用户触摸或滚动后会放行请求。
+ English: Keeps the Xiaohongshu home feed stable when the app opens or returns to the foreground. Manual refresh and pagination remain available, and requests are released after user interaction.
+Maintainer: Local Compatibility Build
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate
+Icon: https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/icons/com.local.xhs.norefresh.png
+Filename: pool/main/小红书防自动刷新-0.1.0-rootful.deb
+Size: 23146
+MD5sum: 4a57ac100753f7715db55730a58a47c9
+SHA1: 041f200ea5e357c0f840cea1850bc786ab8a1359
+SHA256: 53f583059be86ee433b8a2aaafe33770bf358c9859e0c0a8e1783fd45abdc43f

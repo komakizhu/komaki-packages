@@ -23,6 +23,15 @@ PACKAGE_METADATA_OVERRIDES = {
             "It does not fix or enable Apple Pay or NFC."
         ),
     },
+    "com.local.xhs.norefresh": {
+        "name": "小红书防自动刷新 / XHS No Startup Refresh",
+        "description": (
+            "中文：阻止小红书打开或回到前台时自动刷新首页，保留手动刷新和继续加载。"
+            "用户触摸或滚动后会放行请求。\n"
+            " English: Keeps the Xiaohongshu home feed stable when the app opens or returns to the foreground. "
+            "Manual refresh and pagination remain available, and requests are released after user interaction."
+        ),
+    },
 }
 
 
