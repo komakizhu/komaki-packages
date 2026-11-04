@@ -1,10 +1,10 @@
 # Komaki Zhu 越狱插件源 / Komaki Zhu Jailbreak Source
 
-Komaki Zhu 的 Sileo/APT 越狱插件源，目前收录 NFComa Apple Pay Alert Guard 和小红书防自动刷新。软件源名称和头像使用 Komaki Zhu 的 GitHub 资料。
+Komaki Zhu 的 Sileo/APT 越狱插件源，目前收录 NFComa Apple Pay Alert Guard、小红书防自动刷新和 BiliShareBridge。软件源名称和头像使用 Komaki Zhu 的 GitHub 资料。
 
 Sileo 的“添加源”会直接请求源根目录下的 `Release`，所以索引脚本同时生成根目录平面索引和标准 `dists/stable/` 索引。
 
-The Komaki Zhu Sileo/APT source currently hosts NFComa Apple Pay Alert Guard and XHS No Startup Refresh. The source name and icon use Komaki Zhu's GitHub profile.
+The Komaki Zhu Sileo/APT source currently hosts NFComa Apple Pay Alert Guard, XHS No Startup Refresh, and BiliShareBridge. The source name and icon use Komaki Zhu's GitHub profile.
 
 Sileo's simple “Add Source” flow requests `Release` from the repository root. The index script therefore generates both flat root indexes and the standard `dists/stable/` layout.
 
@@ -29,6 +29,22 @@ Three jailbreak packages are available: Rootful (`iphoneos-arm`), Rootless (`iph
 - [TrollStore/TrollFools `.dylib`](artifacts/小红书防自动刷新-0.1.0-1-trollstore.dylib)
 
 Keeps the Xiaohongshu home feed stable when the app opens or returns to the foreground. Manual refresh and pagination remain available, and requests are released after user interaction. The TrollStore/TrollFools file is a universal arm64/arm64e dylib for injection; it is not a pre-injected IPA.
+
+### 哔哩哔哩分享桥接 / BiliShareBridge
+
+将支持的视频、番剧、直播间和空间内容交给 iOS 系统分享面板，并为蓝色分身转换 `bilibili` / `bilitwin` 链接。Sileo 条目使用 B 站 8.76.0 App 图标；源头像保持不变。
+
+Routes supported video, series, live room, and space shares to the iOS system share sheet, and translates `bilibili` / `bilitwin` URLs for the blue app variant. The Sileo package icon uses the Bilibili 8.76.0 app icon; the source avatar is unchanged.
+
+三个 `.deb` 仅含自研桥接库，不含 `BiliBiliTweak` 或 8.89 专用 `BiliNetworkCompat`：
+
+- [有根 Rootful `.deb`](pool/main/哔哩哔哩分享桥接-1.1.1-rootful.deb)
+- [无根 Rootless `.deb`](pool/main/哔哩哔哩分享桥接-1.1.1-rootless.deb)
+- [RootHide `.deb`](pool/main/哔哩哔哩分享桥接-1.1.1-roothide.deb)
+- [TrollFools `.zip`](artifacts/哔哩哔哩分享桥接-1.1.1-1-trollfools.zip)
+- [通用 `.dylib`](artifacts/哔哩哔哩分享桥接-1.1.1-1-trollstore.dylib)
+
+All three `.deb` files contain only the original bridge, not `BiliBiliTweak` or the 8.89-only `BiliNetworkCompat`.
 
 ## Sileo 源地址 / Sileo Source URLs
 

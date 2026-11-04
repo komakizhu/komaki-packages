@@ -32,6 +32,15 @@ PACKAGE_METADATA_OVERRIDES = {
             "Manual refresh and pagination remain available, and requests are released after user interaction."
         ),
     },
+    "com.github.komakizhu.bilisharebridge": {
+        "name": "哔哩哔哩分享桥接 / BiliShareBridge",
+        "description": (
+            "中文：将支持的哔哩哔哩视频、番剧、直播间和空间分享交给 iOS 系统分享面板，"
+            "并转换蓝色分身的 bilitwin 链接。\n"
+            " English: Routes supported Bilibili shares to the iOS system share sheet and translates "
+            "URLs for the blue app variant."
+        ),
+    },
 }
 
 
