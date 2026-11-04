@@ -32,6 +32,22 @@ MD5sum: 827e6a0e8593c5f19dea5866d33c9e74
 SHA1: 629216f5fae250af952a9b1744560d195894db9e
 SHA256: c8de84e03b528d2f85b161e9a376773c6c4c27768970efa059982d6d2aac3212
 
+Package: com.github.komakizhu.bilisharebridge
+Version: 1.1.1
+Architecture: iphoneos-arm64e
+Name: 哔哩哔哩分享桥接 / BiliShareBridge
+Description: 中文：将支持的哔哩哔哩视频、番剧、直播间和空间分享交给 iOS 系统分享面板，并转换蓝色分身的 bilitwin 链接。
+ English: Routes supported Bilibili shares to the iOS system share sheet and translates URLs for the blue app variant.
+Maintainer: Komaki Zhu <145947842+komakizhu@users.noreply.github.com>
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate
+Icon: https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/icons/com.github.komakizhu.bilisharebridge.png
+Filename: pool/main/哔哩哔哩分享桥接-1.1.1-roothide.deb
+Size: 16912
+MD5sum: 52593b98a3f2256d86f8060b26bcfa0e
+SHA1: 6a923270ea377692c4ce9743f75ef525242556cf
+SHA256: a0fefa363797520c73cb58b89ba99a019b0394a1169af9d57fb0daed204b1655
+
 Package: com.local.xhs.norefresh
 Version: 0.1.0+1-roothide
 Architecture: iphoneos-arm64e

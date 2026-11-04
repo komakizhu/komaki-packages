@@ -6,25 +6,25 @@ Version: 1.0
 Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: Komaki Zhu 越狱插件源 / Komaki Zhu jailbreak package source
-Date: Wed, 04 Nov 2026 06:25:42 GMT
+Date: Wed, 04 Nov 2026 08:06:11 GMT
 MD5Sum:
- 5087768d7096754f651ca61f6ef33d1e             1868 main/binary-iphoneos-arm/Packages
- 85f130094bf759ccba3d4b64a725038d             1117 main/binary-iphoneos-arm/Packages.gz
- 14ee113f14aff47259ff244171dce6f0             1878 main/binary-iphoneos-arm64/Packages
- 83011434501ad1e398d2c145c3624066             1116 main/binary-iphoneos-arm64/Packages.gz
- 96e271c48f424f8eb638ec3c95c66d3d             2825 main/binary-iphoneos-arm64e/Packages
- 650e9e322ee5c8f1dfe738cb50b1f651             1244 main/binary-iphoneos-arm64e/Packages.gz
+ fbb4be1d1d8d999756370920435c5786             2768 main/binary-iphoneos-arm/Packages
+ e1a9bacdedff691fd6fabe972b2844fe             1517 main/binary-iphoneos-arm/Packages.gz
+ 4b200342dc743a8a4f53a83ee9ea07f4             2781 main/binary-iphoneos-arm64/Packages
+ 38bfeb654cd0250607deaff8ce5ae6af             1515 main/binary-iphoneos-arm64/Packages.gz
+ 0ee26e7ff771b9491b1b40cb32038d40             3729 main/binary-iphoneos-arm64e/Packages
+ f72a44b5e96bbbb2c5d434d4ed345f9a             1645 main/binary-iphoneos-arm64e/Packages.gz
 SHA1:
- 05ff86adad20a85a71b780116fd47094f7e1bc11             1868 main/binary-iphoneos-arm/Packages
- d05684cb4a22904de94ca92c62f0aeeda00098c8             1117 main/binary-iphoneos-arm/Packages.gz
- 7057759ce769d3020da57cd6e8ff744a27c5e0d9             1878 main/binary-iphoneos-arm64/Packages
- 18c48f3bb8ae9b71d97fafde9526f2056b77d63b             1116 main/binary-iphoneos-arm64/Packages.gz
- 59276ff792d4a263e61e145c6e667a47a66ce87f             2825 main/binary-iphoneos-arm64e/Packages
- 1e31433ca3406760f882f98f3438cc3607fcee4a             1244 main/binary-iphoneos-arm64e/Packages.gz
+ 8d7fa84ff8d07b346ff777714c02e30ad29c8a49             2768 main/binary-iphoneos-arm/Packages
+ b968351e6bffb81a1402dfc7eac42160531d8e03             1517 main/binary-iphoneos-arm/Packages.gz
+ f2819115fa0f14150155f1e39e9f9bb59c7220ad             2781 main/binary-iphoneos-arm64/Packages
+ 90746d420b8ff69e7a6938041f589e8c16b547e7             1515 main/binary-iphoneos-arm64/Packages.gz
+ a0bfdafd7f0a9586dfe6aa9be212db8be19c9938             3729 main/binary-iphoneos-arm64e/Packages
+ 6ef8ee836c6b19795de095bfb0acee2135357c4a             1645 main/binary-iphoneos-arm64e/Packages.gz
 SHA256:
- fb6ad9bbb782acad1f3d0fca9ae3855af75ec55b768dba2bf4abb5f6846f76ee             1868 main/binary-iphoneos-arm/Packages
- 2cf594ffbd651814547661e98b004173860e84281b662e531afde07ebcba6533             1117 main/binary-iphoneos-arm/Packages.gz
- 4d4fa1d5560cdd4f3e123dab0e27d3526a9e4e054dcf72809194df7f6a44b7d9             1878 main/binary-iphoneos-arm64/Packages
- d9566333b6119732ef92b80a5aab9800a41468fcc2f64c564676379c75375a63             1116 main/binary-iphoneos-arm64/Packages.gz
- 6307df8a7035dca8d8bc20e65100da9d875d82890a14eb5d5c98aecff030c327             2825 main/binary-iphoneos-arm64e/Packages
- b4687f7fa752a9432b6c2afa159fa4c81935a6e6e289404432f89c3209f931ae             1244 main/binary-iphoneos-arm64e/Packages.gz
+ f32cf8310d973151801ad96716a180192f0006ba8afe3c44e9a93ccd768748d5             2768 main/binary-iphoneos-arm/Packages
+ 846a6f17b7c566b1d055baf4d34f4b03fab0189fd88721b96dbe17c310698960             1517 main/binary-iphoneos-arm/Packages.gz
+ bbb82cf2fa5eabf9ec5d0201e12de5371a4bea7205664ddf99a063e599cf8003             2781 main/binary-iphoneos-arm64/Packages
+ 1a02950310633c79f10e83c31e856be242b1ae698140414464cd7cd05fb8c6fb             1515 main/binary-iphoneos-arm64/Packages.gz
+ 59f5bb6b536b99141c5383c6b4b3bd07d0c5621486444408e6ba447d1a5c161e             3729 main/binary-iphoneos-arm64e/Packages
+ 27df92a9ecbfd083238af58ba7bc1951da1abb095024830895e8775553f7c590             1645 main/binary-iphoneos-arm64e/Packages.gz
