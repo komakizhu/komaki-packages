@@ -15,7 +15,7 @@ SOURCE_NAME = "Komaki Zhu"
 SOURCE_DESCRIPTION = "Komaki Zhu 越狱插件源 / Komaki Zhu jailbreak package source"
 PACKAGE_METADATA_OVERRIDES = {
     "app.local.nfcoma.applepay-alert-guard": {
-        "name": "NFComa Apple Pay Alert Guard / NFComa Apple Pay 警告守护",
+        "name": "NFComa 屏蔽钱包异常 / NFComa Wallet Alert Suppression",
         "description": (
             "中文：当 iPhone 显示“无法使用 Apple Pay”提示时，这个插件会自动关闭提示。"
             "它不会修复或启用 Apple Pay 或 NFC。\n"

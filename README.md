@@ -1,32 +1,45 @@
 # Komaki Zhu 越狱插件源 / Komaki Zhu Jailbreak Source
 
-Komaki Zhu 的 Sileo/APT 越狱插件源，目前收录 NFComa Apple Pay Alert Guard、小红书防自动刷新和 BiliShareBridge。软件源名称和头像使用 Komaki Zhu 的 GitHub 资料。
+Komaki Zhu 的 Sileo/APT 越狱插件源，目前收录 NFComa 屏蔽钱包异常、小红书防自动刷新和 BiliShareBridge。软件源名称和头像使用 Komaki Zhu 的 GitHub 资料。
 
 Sileo 的“添加源”会直接请求源根目录下的 `Release`，所以索引脚本同时生成根目录平面索引和标准 `dists/stable/` 索引。
 
-The Komaki Zhu Sileo/APT source currently hosts NFComa Apple Pay Alert Guard, XHS No Startup Refresh, and BiliShareBridge. The source name and icon use Komaki Zhu's GitHub profile.
+The Komaki Zhu Sileo/APT source currently hosts NFComa Wallet Alert Suppression, XHS No Startup Refresh, and BiliShareBridge. The source name and icon use Komaki Zhu's GitHub profile.
 
 Sileo's simple “Add Source” flow requests `Release` from the repository root. The index script therefore generates both flat root indexes and the standard `dists/stable/` layout.
 
 ## 当前插件 / Current Tweak
 
-**NFComa Apple Pay Alert Guard** 会自动关闭 iPhone 显示的“无法使用 Apple Pay”提示。它不会修复或启用 Apple Pay、NFC，也不能代替越狱注入器。
+**NFComa 屏蔽钱包异常** 会自动关闭 iPhone 显示的“无法使用 Apple Pay”提示。它不会修复或启用 Apple Pay、NFC，也不能代替越狱注入器。
 
-This tweak automatically closes the “Apple Pay unavailable” alert on iPhone. It does not fix or enable Apple Pay or NFC, and it does not replace the jailbreak injector.
+NFComa Wallet Alert Suppression automatically closes the “Apple Pay unavailable” alert on iPhone. It does not fix or enable Apple Pay or NFC, and it does not replace the jailbreak injector.
 
 提供三种越狱安装包：Rootful（`iphoneos-arm`）、Rootless（`iphoneos-arm64`）和 RootHide（`iphoneos-arm64e`）。请安装与你的越狱环境相符的版本。
 
 Three jailbreak packages are available: Rootful (`iphoneos-arm`), Rootless (`iphoneos-arm64`), and RootHide (`iphoneos-arm64e`). Install the package that matches your jailbreak.
 
+这个插件目前有 Rootful、Rootless 和两个 RootHide 构建：
+
+- [NFComa 屏蔽钱包异常 Rootful](pool/main/NFComa%20%E5%B1%8F%E8%94%BD%E9%92%B1%E5%8C%85%E5%BC%82%E5%B8%B8%20Rootful.deb)
+- [NFComa 屏蔽钱包异常 Rootless](pool/main/NFComa%20%E5%B1%8F%E8%94%BD%E9%92%B1%E5%8C%85%E5%BC%82%E5%B8%B8%20Rootless.deb)
+- [NFComa 屏蔽钱包异常 RootHide（旧构建）](pool/main/NFComa%20%E5%B1%8F%E8%94%BD%E9%92%B1%E5%8C%85%E5%BC%82%E5%B8%B8%20RootHide%20%E6%97%A7%E6%9E%84%E5%BB%BA.deb)
+- [NFComa 屏蔽钱包异常 RootHide](pool/main/NFComa%20%E5%B1%8F%E8%94%BD%E9%92%B1%E5%8C%85%E5%BC%82%E5%B8%B8%20RootHide.deb)
+
+## 统一命名规则 / Naming Convention
+
+插件交付文件统一使用 `App名 功能简述 环境.扩展名`，文件名不包含版本号。例如：`VVebo 全功能解锁 RootHide.deb` 和 `VVebo 全功能解锁 TrollStore.dylib`。App 名、功能和环境之间用空格分隔；功能描述保持简洁。同一环境有多个构建时，加简短说明区分。APT 的 `Package` 标识符保持稳定，`.deb` 版本由包内信息及索引的 `Version` 字段记录。
+
+Use `App name Short feature Environment.extension` for plugin delivery filenames, without a version number. For multiple builds of the same environment, add a short descriptive qualifier. Keep the stable Debian `Package` identifier unchanged; `.deb` package metadata and the APT `Version` field record its version.
+
 ### 小红书防自动刷新 / XHS No Startup Refresh
 
 阻止小红书打开或回到前台时自动刷新首页，保留手动刷新和继续加载；用户触摸或滚动后会放行请求。
-三个 `.deb` 的文件名使用“中文名-版本-环境”规则；另外提供一个可供 TrollStore/TrollFools 注入的通用动态库：
+另外提供一个可供 TrollStore/TrollFools 注入的通用动态库：
 
-- [Rootful `.deb`](pool/main/小红书防自动刷新-0.1.0-rootful.deb)
-- [Rootless `.deb`](pool/main/小红书防自动刷新-0.1.0-rootless.deb)
-- [RootHide `.deb`](pool/main/小红书防自动刷新-0.1.0-roothide.deb)
-- [TrollStore/TrollFools `.dylib`](artifacts/小红书防自动刷新-0.1.0-1-trollstore.dylib)
+- [Rootful `.deb`](pool/main/%E5%B0%8F%E7%BA%A2%E4%B9%A6%20%E9%98%B2%E8%87%AA%E5%8A%A8%E5%88%B7%E6%96%B0%20Rootful.deb)
+- [Rootless `.deb`](pool/main/%E5%B0%8F%E7%BA%A2%E4%B9%A6%20%E9%98%B2%E8%87%AA%E5%8A%A8%E5%88%B7%E6%96%B0%20Rootless.deb)
+- [RootHide `.deb`](pool/main/%E5%B0%8F%E7%BA%A2%E4%B9%A6%20%E9%98%B2%E8%87%AA%E5%8A%A8%E5%88%B7%E6%96%B0%20RootHide.deb)
+- [TrollStore/TrollFools `.dylib`](artifacts/%E5%B0%8F%E7%BA%A2%E4%B9%A6%20%E9%98%B2%E8%87%AA%E5%8A%A8%E5%88%B7%E6%96%B0%20TrollStore.dylib)
 
 Keeps the Xiaohongshu home feed stable when the app opens or returns to the foreground. Manual refresh and pagination remain available, and requests are released after user interaction. The TrollStore/TrollFools file is a universal arm64/arm64e dylib for injection; it is not a pre-injected IPA.
 
@@ -38,11 +51,11 @@ Routes supported video, series, live room, and space shares to the iOS system sh
 
 三个 `.deb` 仅含自研桥接库，不含 `BiliBiliTweak` 或 8.89 专用 `BiliNetworkCompat`：
 
-- [有根 Rootful `.deb`](pool/main/哔哩哔哩分享桥接-1.1.1-rootful.deb)
-- [无根 Rootless `.deb`](pool/main/哔哩哔哩分享桥接-1.1.1-rootless.deb)
-- [RootHide `.deb`](pool/main/哔哩哔哩分享桥接-1.1.1-roothide.deb)
-- [TrollFools `.zip`](artifacts/哔哩哔哩分享桥接-1.1.1-1-trollfools.zip)
-- [通用 `.dylib`](artifacts/哔哩哔哩分享桥接-1.1.1-1-trollstore.dylib)
+- [Rootful `.deb`](pool/main/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20%E5%88%86%E4%BA%AB%E6%A1%A5%E6%8E%A5%20Rootful.deb)
+- [Rootless `.deb`](pool/main/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20%E5%88%86%E4%BA%AB%E6%A1%A5%E6%8E%A5%20Rootless.deb)
+- [RootHide `.deb`](pool/main/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20%E5%88%86%E4%BA%AB%E6%A1%A5%E6%8E%A5%20RootHide.deb)
+- [TrollFools `.zip`](artifacts/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20%E5%88%86%E4%BA%AB%E6%A1%A5%E6%8E%A5%20TrollFools.zip)
+- [通用 `.dylib`](artifacts/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20%E5%88%86%E4%BA%AB%E6%A1%A5%E6%8E%A5%20TrollStore.dylib)
 
 All three `.deb` files contain only the original bridge, not `BiliBiliTweak` or the 8.89-only `BiliNetworkCompat`.
 

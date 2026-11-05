@@ -6,13 +6,13 @@ Version: 1.0
 Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: Komaki Zhu 越狱插件源 / Komaki Zhu jailbreak package source
-Date: Wed, 04 Nov 2026 08:06:11 GMT
+Date: Thu, 05 Nov 2026 14:16:43 GMT
 MD5Sum:
- 74395a6bf57b929f42779ca1a878ef27             9280 Packages
- 495c41be64a280a4e8265322068ef233             2348 Packages.gz
+ c4f3752989cae5c93b3f43226df8427f             9116 Packages
+ 1dd512bf9ac9855d77cf5ed032509ea9             2354 Packages.gz
 SHA1:
- 796185934ade94b91b54d4ee1bba641d9b5787b8             9280 Packages
- 7411f1fa824ccf0a1b739716e05059fe4ed1b028             2348 Packages.gz
+ c57ab4e3957cf3bbfa190a41f99033a443df9514             9116 Packages
+ e2b0d42dc3028d3b9fe31a478871efb428ae3dd8             2354 Packages.gz
 SHA256:
- 92cbcaaded570ccfcd204b5e8101d122a02a1d7cc14837b443d89b1113089202             9280 Packages
- 25360cc30b22a886bbc5c48c6b522a87fa0bf86b48350a0f7c6cdc32caf5cd5e             2348 Packages.gz
+ ed791184279ea2ace38885c2bb2361ca28c404b0a0cf814c69bf619a836d5302             9116 Packages
+ 32480ed173ca57e679b25cc4eeeacdfb947339b2588586bfd676baa6cecf34a1             2354 Packages.gz

@@ -1,7 +1,7 @@
 Package: app.local.nfcoma.applepay-alert-guard
 Version: 0.1.0+1-rootless
 Architecture: iphoneos-arm64
-Name: NFComa Apple Pay Alert Guard / NFComa Apple Pay 警告守护
+Name: NFComa 屏蔽钱包异常 / NFComa Wallet Alert Suppression
 Description: 中文：当 iPhone 显示“无法使用 Apple Pay”提示时，这个插件会自动关闭提示。它不会修复或启用 Apple Pay 或 NFC。
  English: When your iPhone shows an “Apple Pay unavailable” alert, this tweak closes it automatically. It does not fix or enable Apple Pay or NFC.
 Maintainer: NFComa
@@ -9,7 +9,7 @@ Section: Tweaks
 Depends: mobilesubstrate
 Installed-Size: 244
 Icon: https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/icons/app.local.nfcoma.applepay-alert-guard.png
-Filename: pool/main/app.local.nfcoma.applepay-alert-guard_0.1.0+1-rootless_iphoneos-arm64.deb
+Filename: pool/main/NFComa 屏蔽钱包异常 Rootless.deb
 Size: 41464
 MD5sum: 94331f9598855998f07f81f5fc1209fe
 SHA1: a30591c07ae7ce9ef79b2c90615afe15cf554542
@@ -25,7 +25,7 @@ Maintainer: Komaki Zhu <145947842+komakizhu@users.noreply.github.com>
 Section: Tweaks
 Depends: firmware (>= 15.0), mobilesubstrate
 Icon: https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/icons/com.github.komakizhu.bilisharebridge.png
-Filename: pool/main/哔哩哔哩分享桥接-1.1.1-rootless.deb
+Filename: pool/main/哔哩哔哩 分享桥接 Rootless.deb
 Size: 16936
 MD5sum: 1649f374ec15d3a0774ac75575866a60
 SHA1: 269a3d78419e814d19ac25313db41665d1f2a7bd
@@ -41,7 +41,7 @@ Maintainer: Local Compatibility Build
 Section: Tweaks
 Depends: firmware (>= 15.0), mobilesubstrate
 Icon: https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/icons/com.local.xhs.norefresh.png
-Filename: pool/main/小红书防自动刷新-0.1.0-rootless.deb
+Filename: pool/main/小红书 防自动刷新 Rootless.deb
 Size: 23184
 MD5sum: 4990437308360a612623432177e39e4e
 SHA1: e5f9d7aef7ec0f6edf0ca63c9375fdce93c1bdc7

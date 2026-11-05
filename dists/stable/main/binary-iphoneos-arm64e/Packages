@@ -1,7 +1,7 @@
 Package: app.local.nfcoma.applepay-alert-guard
 Version: 0.1.0+4-roothide
 Architecture: iphoneos-arm64e
-Name: NFComa Apple Pay Alert Guard / NFComa Apple Pay 警告守护
+Name: NFComa 屏蔽钱包异常 / NFComa Wallet Alert Suppression
 Description: 中文：当 iPhone 显示“无法使用 Apple Pay”提示时，这个插件会自动关闭提示。它不会修复或启用 Apple Pay 或 NFC。
  English: When your iPhone shows an “Apple Pay unavailable” alert, this tweak closes it automatically. It does not fix or enable Apple Pay or NFC.
 Maintainer: NFComa
@@ -9,7 +9,7 @@ Section: Tweaks
 Depends: mobilesubstrate
 Installed-Size: 244
 Icon: https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/icons/app.local.nfcoma.applepay-alert-guard.png
-Filename: pool/main/app.local.nfcoma.applepay-alert-guard_0.1.0+4-roothide_iphoneos-arm64e.deb
+Filename: pool/main/NFComa 屏蔽钱包异常 RootHide 旧构建.deb
 Size: 41330
 MD5sum: 212fa251b8ef14db222d70f6578795d4
 SHA1: 55a2ccd362de8cba178dbb69a6e64ef86a3851f2
@@ -18,7 +18,7 @@ SHA256: 68cd53160df5a3c2e428e59ae579944b1d544e9b1d73d09a5d12703322c461b2
 Package: app.local.nfcoma.applepay-alert-guard
 Version: 0.1.0+5-roothide
 Architecture: iphoneos-arm64e
-Name: NFComa Apple Pay Alert Guard / NFComa Apple Pay 警告守护
+Name: NFComa 屏蔽钱包异常 / NFComa Wallet Alert Suppression
 Description: 中文：当 iPhone 显示“无法使用 Apple Pay”提示时，这个插件会自动关闭提示。它不会修复或启用 Apple Pay 或 NFC。
  English: When your iPhone shows an “Apple Pay unavailable” alert, this tweak closes it automatically. It does not fix or enable Apple Pay or NFC.
 Maintainer: NFComa
@@ -26,7 +26,7 @@ Section: Tweaks
 Depends: mobilesubstrate
 Installed-Size: 244
 Icon: https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/icons/app.local.nfcoma.applepay-alert-guard.png
-Filename: pool/main/app.local.nfcoma.applepay-alert-guard_0.1.0+5-roothide_iphoneos-arm64e.deb
+Filename: pool/main/NFComa 屏蔽钱包异常 RootHide.deb
 Size: 41300
 MD5sum: 827e6a0e8593c5f19dea5866d33c9e74
 SHA1: 629216f5fae250af952a9b1744560d195894db9e
@@ -42,7 +42,7 @@ Maintainer: Komaki Zhu <145947842+komakizhu@users.noreply.github.com>
 Section: Tweaks
 Depends: firmware (>= 15.0), mobilesubstrate
 Icon: https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/icons/com.github.komakizhu.bilisharebridge.png
-Filename: pool/main/哔哩哔哩分享桥接-1.1.1-roothide.deb
+Filename: pool/main/哔哩哔哩 分享桥接 RootHide.deb
 Size: 16912
 MD5sum: 52593b98a3f2256d86f8060b26bcfa0e
 SHA1: 6a923270ea377692c4ce9743f75ef525242556cf
@@ -58,7 +58,7 @@ Maintainer: Local Compatibility Build
 Section: Tweaks
 Depends: firmware (>= 15.0), mobilesubstrate
 Icon: https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/icons/com.local.xhs.norefresh.png
-Filename: pool/main/小红书防自动刷新-0.1.0-roothide.deb
+Filename: pool/main/小红书 防自动刷新 RootHide.deb
 Size: 23152
 MD5sum: 7d1e5a80bc596f5f00733d35b61515b6
 SHA1: 05802d7ad8ef40b0f09d2f783ff54954cd6e5713
