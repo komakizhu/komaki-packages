@@ -33,12 +33,12 @@ PACKAGE_METADATA_OVERRIDES = {
         ),
     },
     "com.github.komakizhu.bilisharebridge": {
-        "name": "哔哩哔哩分享桥接 / BiliShareBridge",
+        "name": "哔哩哔哩 / Bili-komaki",
         "description": (
-            "中文：将支持的哔哩哔哩视频、番剧、直播间和空间分享交给 iOS 系统分享面板，"
-            "并转换蓝色分身的 bilitwin 链接。\n"
-            " English: Routes supported Bilibili shares to the iOS system share sheet and translates "
-            "URLs for the blue app variant."
+            "中文：把哔哩哔哩竖屏视频交给普通视频播放器打开，并提供首页防自动重载的总开关和分开关。"
+            "支持粉色与蓝色客户端。\n"
+            " English: Routes Bilibili portrait videos to the standard player and provides master and separate "
+            "switches for home refresh suppression. Supports both pink and blue clients."
         ),
     },
 }

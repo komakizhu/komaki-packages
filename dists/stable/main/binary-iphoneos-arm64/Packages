@@ -16,20 +16,21 @@ SHA1: a30591c07ae7ce9ef79b2c90615afe15cf554542
 SHA256: 4e0f4ec1dc51d25d12a8327ede719327499959681e4299683a68dffe2334296b
 
 Package: com.github.komakizhu.bilisharebridge
-Version: 1.1.1
+Version: 2.0.0
 Architecture: iphoneos-arm64
-Name: 哔哩哔哩分享桥接 / BiliShareBridge
-Description: 中文：将支持的哔哩哔哩视频、番剧、直播间和空间分享交给 iOS 系统分享面板，并转换蓝色分身的 bilitwin 链接。
- English: Routes supported Bilibili shares to the iOS system share sheet and translates URLs for the blue app variant.
+Name: 哔哩哔哩 / Bili-komaki
+Description: 中文：把哔哩哔哩竖屏视频交给普通视频播放器打开，并提供首页防自动重载的总开关和分开关。支持粉色与蓝色客户端。
+ English: Routes Bilibili portrait videos to the standard player and provides master and separate switches for home refresh suppression. Supports both pink and blue clients.
 Maintainer: Komaki Zhu <145947842+komakizhu@users.noreply.github.com>
+Author: Local Development
 Section: Tweaks
-Depends: firmware (>= 15.0), mobilesubstrate
+Depends: firmware (>= 17.0), ellekit
 Icon: https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/icons/com.github.komakizhu.bilisharebridge.png
-Filename: pool/main/哔哩哔哩 分享桥接 Rootless.deb
-Size: 16936
-MD5sum: 1649f374ec15d3a0774ac75575866a60
-SHA1: 269a3d78419e814d19ac25313db41665d1f2a7bd
-SHA256: bc205a1dec2928fa5031d6652888d629143b60e288e2fafb4253c6d2a3591345
+Filename: pool/main/哔哩哔哩 Bili-komaki Rootless.deb
+Size: 21472
+MD5sum: 98d8ea0c55f267593ce1ed0b2c75b492
+SHA1: b8dacd885b2aa54bb3cec1b93f6211a46dbcf83a
+SHA256: 939d7cef5bd39854e187a0e867f4820404d611e0cdc156b83f19d284d15fa4f6
 
 Package: com.local.xhs.norefresh
 Version: 0.1.0+1-rootless

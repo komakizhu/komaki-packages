@@ -67,52 +67,55 @@ SHA1: 629216f5fae250af952a9b1744560d195894db9e
 SHA256: c8de84e03b528d2f85b161e9a376773c6c4c27768970efa059982d6d2aac3212
 
 Package: com.github.komakizhu.bilisharebridge
-Version: 1.1.1
+Version: 2.0.0
 Architecture: iphoneos-arm64e
-Name: 哔哩哔哩分享桥接 / BiliShareBridge
-Description: 中文：将支持的哔哩哔哩视频、番剧、直播间和空间分享交给 iOS 系统分享面板，并转换蓝色分身的 bilitwin 链接。
- English: Routes supported Bilibili shares to the iOS system share sheet and translates URLs for the blue app variant.
+Name: 哔哩哔哩 / Bili-komaki
+Description: 中文：把哔哩哔哩竖屏视频交给普通视频播放器打开，并提供首页防自动重载的总开关和分开关。支持粉色与蓝色客户端。
+ English: Routes Bilibili portrait videos to the standard player and provides master and separate switches for home refresh suppression. Supports both pink and blue clients.
 Maintainer: Komaki Zhu <145947842+komakizhu@users.noreply.github.com>
+Author: Local Development
 Section: Tweaks
-Depends: firmware (>= 15.0), mobilesubstrate
+Depends: firmware (>= 17.0), ellekit
 Icon: https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/icons/com.github.komakizhu.bilisharebridge.png
-Filename: pool/main/哔哩哔哩 分享桥接 RootHide.deb
-Size: 16912
-MD5sum: 52593b98a3f2256d86f8060b26bcfa0e
-SHA1: 6a923270ea377692c4ce9743f75ef525242556cf
-SHA256: a0fefa363797520c73cb58b89ba99a019b0394a1169af9d57fb0daed204b1655
+Filename: pool/main/哔哩哔哩 Bili-komaki RootHide.deb
+Size: 21468
+MD5sum: 5e5dc7be3f015e96ccaa87284aaa8619
+SHA1: 0d45632fae0db76736d4118f928626e321910393
+SHA256: 2f86ef4e904a35ed28443e2059849e85c18d056d4d19ec1f0202049176adcac3
 
 Package: com.github.komakizhu.bilisharebridge
-Version: 1.1.1
+Version: 2.0.0
 Architecture: iphoneos-arm
-Name: 哔哩哔哩分享桥接 / BiliShareBridge
-Description: 中文：将支持的哔哩哔哩视频、番剧、直播间和空间分享交给 iOS 系统分享面板，并转换蓝色分身的 bilitwin 链接。
- English: Routes supported Bilibili shares to the iOS system share sheet and translates URLs for the blue app variant.
+Name: 哔哩哔哩 / Bili-komaki
+Description: 中文：把哔哩哔哩竖屏视频交给普通视频播放器打开，并提供首页防自动重载的总开关和分开关。支持粉色与蓝色客户端。
+ English: Routes Bilibili portrait videos to the standard player and provides master and separate switches for home refresh suppression. Supports both pink and blue clients.
 Maintainer: Komaki Zhu <145947842+komakizhu@users.noreply.github.com>
+Author: Local Development
 Section: Tweaks
-Depends: firmware (>= 13.0), mobilesubstrate
+Depends: firmware (>= 17.0), ellekit
 Icon: https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/icons/com.github.komakizhu.bilisharebridge.png
-Filename: pool/main/哔哩哔哩 分享桥接 Rootful.deb
-Size: 16880
-MD5sum: 925db4c271b3a1d0ebd1ba732f2e4622
-SHA1: 34ea8f5c9a6138b7360e41c22d6a28c0de75da9b
-SHA256: edc04ce22a9045a65e13b96ff9974a5043670612d1d6cc53f93b3ea3671dcf25
+Filename: pool/main/哔哩哔哩 Bili-komaki Rootful.deb
+Size: 21444
+MD5sum: 142be0b10fb28c25eba6382d599e6051
+SHA1: 8a6b27aae2eeb034e9134a6b3f8741865aa5ab7c
+SHA256: 7fbb3081104faf65ca15a6c301a79f3b82e3635195c87e147999c78d20140348
 
 Package: com.github.komakizhu.bilisharebridge
-Version: 1.1.1
+Version: 2.0.0
 Architecture: iphoneos-arm64
-Name: 哔哩哔哩分享桥接 / BiliShareBridge
-Description: 中文：将支持的哔哩哔哩视频、番剧、直播间和空间分享交给 iOS 系统分享面板，并转换蓝色分身的 bilitwin 链接。
- English: Routes supported Bilibili shares to the iOS system share sheet and translates URLs for the blue app variant.
+Name: 哔哩哔哩 / Bili-komaki
+Description: 中文：把哔哩哔哩竖屏视频交给普通视频播放器打开，并提供首页防自动重载的总开关和分开关。支持粉色与蓝色客户端。
+ English: Routes Bilibili portrait videos to the standard player and provides master and separate switches for home refresh suppression. Supports both pink and blue clients.
 Maintainer: Komaki Zhu <145947842+komakizhu@users.noreply.github.com>
+Author: Local Development
 Section: Tweaks
-Depends: firmware (>= 15.0), mobilesubstrate
+Depends: firmware (>= 17.0), ellekit
 Icon: https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/icons/com.github.komakizhu.bilisharebridge.png
-Filename: pool/main/哔哩哔哩 分享桥接 Rootless.deb
-Size: 16936
-MD5sum: 1649f374ec15d3a0774ac75575866a60
-SHA1: 269a3d78419e814d19ac25313db41665d1f2a7bd
-SHA256: bc205a1dec2928fa5031d6652888d629143b60e288e2fafb4253c6d2a3591345
+Filename: pool/main/哔哩哔哩 Bili-komaki Rootless.deb
+Size: 21472
+MD5sum: 98d8ea0c55f267593ce1ed0b2c75b492
+SHA1: b8dacd885b2aa54bb3cec1b93f6211a46dbcf83a
+SHA256: 939d7cef5bd39854e187a0e867f4820404d611e0cdc156b83f19d284d15fa4f6
 
 Package: com.local.xhs.norefresh
 Version: 0.1.0+1-rootful

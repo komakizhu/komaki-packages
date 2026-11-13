@@ -1,10 +1,10 @@
 # Komaki Zhu 越狱插件源 / Komaki Zhu Jailbreak Source
 
-Komaki Zhu 的 Sileo/APT 越狱插件源，目前收录 NFComa 屏蔽钱包异常、小红书防自动刷新和 BiliShareBridge。软件源名称和头像使用 Komaki Zhu 的 GitHub 资料。
+Komaki Zhu 的 Sileo/APT 越狱插件源，目前收录 NFComa 屏蔽钱包异常、小红书防自动刷新和 Bili-komaki。旧版 BiliShareBridge 的 TrollStore/TrollFools 独立注入文件仍保留。软件源名称和头像使用 Komaki Zhu 的 GitHub 资料。
 
 Sileo 的“添加源”会直接请求源根目录下的 `Release`，所以索引脚本同时生成根目录平面索引和标准 `dists/stable/` 索引。
 
-The Komaki Zhu Sileo/APT source currently hosts NFComa Wallet Alert Suppression, XHS No Startup Refresh, and BiliShareBridge. The source name and icon use Komaki Zhu's GitHub profile.
+The Komaki Zhu Sileo/APT source currently hosts NFComa Wallet Alert Suppression, XHS No Startup Refresh, and Bili-komaki. Standalone TrollStore/TrollFools injection artifacts for the older BiliShareBridge remain available. The source name and icon use Komaki Zhu's GitHub profile.
 
 Sileo's simple “Add Source” flow requests `Release` from the repository root. The index script therefore generates both flat root indexes and the standard `dists/stable/` layout.
 
@@ -43,21 +43,20 @@ Use `App name Short feature Environment.extension` for plugin delivery filenames
 
 Keeps the Xiaohongshu home feed stable when the app opens or returns to the foreground. Manual refresh and pagination remain available, and requests are released after user interaction. The TrollStore/TrollFools file is a universal arm64/arm64e dylib for injection; it is not a pre-injected IPA.
 
-### 哔哩哔哩分享桥接 / BiliShareBridge
+### 哔哩哔哩 Bili-komaki
 
-将支持的视频、番剧、直播间和空间内容交给 iOS 系统分享面板，并为蓝色分身转换 `bilibili` / `bilitwin` 链接。Sileo 条目使用 B 站 8.76.0 App 图标；源头像保持不变。
+把 B 站竖屏视频交给普通视频播放器打开，并提供首页防自动重载的总开关和分开关。支持粉色与蓝色 B 站客户端。当前 Sileo 包版本为 **2.0.0**。条目沿用原来的 B 站 App 图标，软件源头像不变；Debian 包标识保持稳定，旧条目可直接升级。
 
-Routes supported video, series, live room, and space shares to the iOS system share sheet, and translates `bilibili` / `bilitwin` URLs for the blue app variant. The Sileo package icon uses the Bilibili 8.76.0 app icon; the source avatar is unchanged.
+Routes Bilibili portrait videos to the standard video player and provides master and separate switches for home refresh suppression. It targets both pink and blue Bilibili clients. The current Sileo package version is **2.0.0**. The package keeps the existing Bilibili app icon and stable Debian package identifier, so the old entry upgrades in place; the source avatar is unchanged.
 
-三个 `.deb` 仅含自研桥接库，不含 `BiliBiliTweak` 或 8.89 专用 `BiliNetworkCompat`：
+- [Rootful `.deb`](pool/main/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20Bili-komaki%20Rootful.deb)
+- [Rootless `.deb`](pool/main/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20Bili-komaki%20Rootless.deb)
+- [RootHide `.deb`](pool/main/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20Bili-komaki%20RootHide.deb)
 
-- [Rootful `.deb`](pool/main/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20%E5%88%86%E4%BA%AB%E6%A1%A5%E6%8E%A5%20Rootful.deb)
-- [Rootless `.deb`](pool/main/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20%E5%88%86%E4%BA%AB%E6%A1%A5%E6%8E%A5%20Rootless.deb)
-- [RootHide `.deb`](pool/main/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20%E5%88%86%E4%BA%AB%E6%A1%A5%E6%8E%A5%20RootHide.deb)
-- [TrollFools `.zip`](artifacts/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20%E5%88%86%E4%BA%AB%E6%A1%A5%E6%8E%A5%20TrollFools.zip)
-- [通用 `.dylib`](artifacts/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20%E5%88%86%E4%BA%AB%E6%A1%A5%E6%8E%A5%20TrollStore.dylib)
+旧版 BiliShareBridge 的独立注入文件保留在源中，不包含在上述 Bili-komaki `.deb` 内：
 
-All three `.deb` files contain only the original bridge, not `BiliBiliTweak` or the 8.89-only `BiliNetworkCompat`.
+- [旧版 TrollFools `.zip`](artifacts/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20%E5%88%86%E4%BA%AB%E6%A1%A5%E6%8E%A5%20TrollFools.zip)
+- [旧版 TrollStore `.dylib`](artifacts/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20%E5%88%86%E4%BA%AB%E6%A1%A5%E6%8E%A5%20TrollStore.dylib)
 
 ## Sileo 源地址 / Sileo Source URLs
 
