@@ -58,6 +58,14 @@ Routes Bilibili portrait videos to the standard video player and provides master
 - [旧版 TrollFools `.zip`](artifacts/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20%E5%88%86%E4%BA%AB%E6%A1%A5%E6%8E%A5%20TrollFools.zip)
 - [旧版 TrollStore `.dylib`](artifacts/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20%E5%88%86%E4%BA%AB%E6%A1%A5%E6%8E%A5%20TrollStore.dylib)
 
+### Quantumult X 设置 VPN 冷启动修复 / Quantumult X Settings VPN Cold Start Fix
+
+面向 iOS 17.3.1、RootHide 和 arm64e 上的 Quantumult X 1.8.1（build 951）。系统从“设置 → VPN”启动且 QX 主程序未运行时，如果 Tunnel 收到 nil 启动参数，此插件会向 QX 原生 provider 转发空字典；非空参数原样传递，QX 自己的校验和错误处理保持有效。真机日志确认 QX 主程序未运行时 provider 启动回调成功；实际隧道流量和 BetterCCVPN 尚未单独验证。
+
+Targets Quantumult X 1.8.1 (build 951) on iOS 17.3.1 with RootHide on arm64e. When iOS Settings starts the VPN while the QX app is not running, the tweak forwards an empty dictionary if the Tunnel receives nil options. Non-nil options and QX's native validation and error handling are preserved. Device logs confirm a successful provider callback with the QX app absent; actual tunnel traffic and BetterCCVPN have not been separately verified.
+
+- [Quantumult X 设置 VPN 冷启动修复 RootHide `.deb`](pool/main/Quantumult%20X%20%E8%AE%BE%E7%BD%AE%20VPN%20%E5%86%B7%E5%90%AF%E5%8A%A8%E4%BF%AE%E5%A4%8D%20RootHide.deb)（版本 / Version `0.1.0`）
+
 ## Sileo 源地址 / Sileo Source URLs
 
 - 当前推荐 / Recommended now：`https://komakizhu.github.io/komaki-packages/`

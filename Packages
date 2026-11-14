@@ -164,3 +164,19 @@ Size: 23184
 MD5sum: 4990437308360a612623432177e39e4e
 SHA1: e5f9d7aef7ec0f6edf0ca63c9375fdce93c1bdc7
 SHA256: c28c21fa43ef953b15cd67298c8db669f149417b81f4e2c0196c28decfc5877c
+
+Package: local.qx.coldstart.fix
+Version: 0.1.0
+Architecture: iphoneos-arm64e
+Name: QX Cold Start Fix
+Description: Minimal RootHide compatibility for Quantumult X external VPN startup
+Maintainer: Local
+Author: Local
+Section: Tweaks
+Depends: mobilesubstrate
+Installed-Size: 112
+Filename: pool/main/Quantumult X 设置 VPN 冷启动修复 RootHide.deb
+Size: 7718
+MD5sum: af52bc0be7580ffab600e98d80495804
+SHA1: 8e1d870b45e7de4b6b44088519cef99779e5c5d9
+SHA256: cf2ddd229383a0679d9723673e88705969d1c3e15e8adff85ca3f64fb1447d0a
