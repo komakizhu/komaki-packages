@@ -45,9 +45,9 @@ Keeps the Xiaohongshu home feed stable when the app opens or returns to the fore
 
 ### 哔哩哔哩 Bili-komaki
 
-把 B 站竖屏视频交给普通视频播放器打开，并提供首页防自动重载的总开关和分开关。支持粉色与蓝色 B 站客户端。当前 Sileo 包版本为 **2.0.0**。条目沿用原来的 B 站 App 图标，软件源头像不变；Debian 包标识保持稳定，旧条目可直接升级。
+把 B 站竖屏视频交给普通视频播放器打开，并提供首页防自动重载和竖屏视频播完后暂停的独立开关。支持粉色与蓝色 B 站客户端。RootHide 包版本为 **2.1.0**；Rootful 和 Rootless 包仍为 **2.0.0**。条目沿用原来的 B 站 App 图标，软件源头像不变；Debian 包标识保持稳定。
 
-Routes Bilibili portrait videos to the standard video player and provides master and separate switches for home refresh suppression. It targets both pink and blue Bilibili clients. The current Sileo package version is **2.0.0**. The package keeps the existing Bilibili app icon and stable Debian package identifier, so the old entry upgrades in place; the source avatar is unchanged.
+Routes Bilibili portrait videos to the standard player and provides separate switches for home refresh protection and pausing vertical videos at the end. It targets both pink and blue clients. The RootHide package is **2.1.0**; Rootful and Rootless packages remain at **2.0.0**. The package keeps the existing Bilibili app icon and stable Debian package identifier; the source avatar is unchanged.
 
 - [Rootful `.deb`](pool/main/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20Bili-komaki%20Rootful.deb)
 - [Rootless `.deb`](pool/main/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%20Bili-komaki%20Rootless.deb)

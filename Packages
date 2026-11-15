@@ -68,27 +68,10 @@ SHA256: c8de84e03b528d2f85b161e9a376773c6c4c27768970efa059982d6d2aac3212
 
 Package: com.github.komakizhu.bilisharebridge
 Version: 2.0.0
-Architecture: iphoneos-arm64e
-Name: 哔哩哔哩 / Bili-komaki
-Description: 中文：把哔哩哔哩竖屏视频交给普通视频播放器打开，并提供首页防自动重载的总开关和分开关。支持粉色与蓝色客户端。
- English: Routes Bilibili portrait videos to the standard player and provides master and separate switches for home refresh suppression. Supports both pink and blue clients.
-Maintainer: Komaki Zhu <145947842+komakizhu@users.noreply.github.com>
-Author: Local Development
-Section: Tweaks
-Depends: firmware (>= 17.0), ellekit
-Icon: https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/icons/com.github.komakizhu.bilisharebridge.png
-Filename: pool/main/哔哩哔哩 Bili-komaki RootHide.deb
-Size: 21468
-MD5sum: 5e5dc7be3f015e96ccaa87284aaa8619
-SHA1: 0d45632fae0db76736d4118f928626e321910393
-SHA256: 2f86ef4e904a35ed28443e2059849e85c18d056d4d19ec1f0202049176adcac3
-
-Package: com.github.komakizhu.bilisharebridge
-Version: 2.0.0
 Architecture: iphoneos-arm
 Name: 哔哩哔哩 / Bili-komaki
-Description: 中文：把哔哩哔哩竖屏视频交给普通视频播放器打开，并提供首页防自动重载的总开关和分开关。支持粉色与蓝色客户端。
- English: Routes Bilibili portrait videos to the standard player and provides master and separate switches for home refresh suppression. Supports both pink and blue clients.
+Description: 中文：把哔哩哔哩竖屏视频交给普通播放器打开，并提供首页防自动重载和竖屏播完暂停的独立开关。支持粉色与蓝色客户端。
+ English: Routes Bilibili portrait videos to the standard player and provides separate switches for home refresh protection and pausing vertical videos at the end. Supports both pink and blue clients.
 Maintainer: Komaki Zhu <145947842+komakizhu@users.noreply.github.com>
 Author: Local Development
 Section: Tweaks
@@ -104,8 +87,8 @@ Package: com.github.komakizhu.bilisharebridge
 Version: 2.0.0
 Architecture: iphoneos-arm64
 Name: 哔哩哔哩 / Bili-komaki
-Description: 中文：把哔哩哔哩竖屏视频交给普通视频播放器打开，并提供首页防自动重载的总开关和分开关。支持粉色与蓝色客户端。
- English: Routes Bilibili portrait videos to the standard player and provides master and separate switches for home refresh suppression. Supports both pink and blue clients.
+Description: 中文：把哔哩哔哩竖屏视频交给普通播放器打开，并提供首页防自动重载和竖屏播完暂停的独立开关。支持粉色与蓝色客户端。
+ English: Routes Bilibili portrait videos to the standard player and provides separate switches for home refresh protection and pausing vertical videos at the end. Supports both pink and blue clients.
 Maintainer: Komaki Zhu <145947842+komakizhu@users.noreply.github.com>
 Author: Local Development
 Section: Tweaks
@@ -116,6 +99,23 @@ Size: 21472
 MD5sum: 98d8ea0c55f267593ce1ed0b2c75b492
 SHA1: b8dacd885b2aa54bb3cec1b93f6211a46dbcf83a
 SHA256: 939d7cef5bd39854e187a0e867f4820404d611e0cdc156b83f19d284d15fa4f6
+
+Package: com.github.komakizhu.bilisharebridge
+Version: 2.1.0
+Architecture: iphoneos-arm64e
+Name: 哔哩哔哩 / Bili-komaki
+Description: 中文：把哔哩哔哩竖屏视频交给普通播放器打开，并提供首页防自动重载和竖屏播完暂停的独立开关。支持粉色与蓝色客户端。
+ English: Routes Bilibili portrait videos to the standard player and provides separate switches for home refresh protection and pausing vertical videos at the end. Supports both pink and blue clients.
+Maintainer: Komaki Zhu <145947842+komakizhu@users.noreply.github.com>
+Author: Local Development
+Section: Tweaks
+Depends: firmware (>= 17.0), ellekit
+Icon: https://cdn.jsdelivr.net/gh/komakizhu/komaki-packages@main/icons/com.github.komakizhu.bilisharebridge.png
+Filename: pool/main/哔哩哔哩 Bili-komaki RootHide.deb
+Size: 57934
+MD5sum: 4f3ff036f7a81f22e8fd63b63b425cda
+SHA1: 2719474ea4f4d256d458516ffcd54746e44515ac
+SHA256: 99924572e6df48664e5d239d17da5e678c83e770f6eef8310c1f8c110a876de1
 
 Package: com.local.xhs.norefresh
 Version: 0.1.0+1-rootful

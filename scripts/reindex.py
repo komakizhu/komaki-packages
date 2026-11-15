@@ -35,10 +35,10 @@ PACKAGE_METADATA_OVERRIDES = {
     "com.github.komakizhu.bilisharebridge": {
         "name": "哔哩哔哩 / Bili-komaki",
         "description": (
-            "中文：把哔哩哔哩竖屏视频交给普通视频播放器打开，并提供首页防自动重载的总开关和分开关。"
+            "中文：把哔哩哔哩竖屏视频交给普通播放器打开，并提供首页防自动重载和竖屏播完暂停的独立开关。"
             "支持粉色与蓝色客户端。\n"
-            " English: Routes Bilibili portrait videos to the standard player and provides master and separate "
-            "switches for home refresh suppression. Supports both pink and blue clients."
+            " English: Routes Bilibili portrait videos to the standard player and provides separate switches for "
+            "home refresh protection and pausing vertical videos at the end. Supports both pink and blue clients."
         ),
     },
 }
